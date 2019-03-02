@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+/* basic color */
+:root{
+  --main-color: #87B7FF;
+  --accent-color: #65A3FF;
+  --accent-color: #FF6955; /*living coral*/
+}
+
+/* basic setting */
+body{
+  font-family: Montserrat;
+  margin: 0;
+}
+
+/* main full banner image */
+.full_banner{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  min-height: 100vh;
+  background-image: url(img/banner_main.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: #FFF;
+}
+
+.full_banner h1{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size:20vw;
+  font-weight: 500;
+  letter-spacing: 0.015em;
+  margin-left: 0.015em;
+}
+
+.full_banner p{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 8vw;
+  font-weight: 600;
+  color: #D1D1D1;
+  font-family: Nanum brush script;
+}
+
+#welcoming{
+  margin-top: 50px;
+}
+
+
+@media (min-width:768px) {
+  .full_banner h1{
+    font-size: 145px;
+  }
+
+  .full_banner p{
+    font-size : 60px;
+  }
+}
