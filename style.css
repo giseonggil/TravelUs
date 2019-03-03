@@ -6,9 +6,10 @@
   --accent-color: #65A3FF;
   --double-accent-color: #FF6955; /*living coral*/
   --text-bright-color: #fff;
+  --text-less-bright-color: rgba(255, 255, 255, 0.65);
   --icon-color: #fff;
   --icon-bk-color: #ddd;
-  --large-width: 1000px;
+  --large-width: 1200px;
   --logo-bk-color: #163D3F;
 }
 
@@ -29,6 +30,8 @@ header {
   background-color: transparent;
 }
 
+/* header logo */
+
 .head_logo {
   display: inline-block;
   line-height: 1.65;
@@ -42,7 +45,7 @@ header {
   font-family: Poppins;
 }
 
-.head_logo span {
+.head_logo span{
   font-size: 0.9em;
   font-weight: 600;
   color: rgba(255, 255, 255, 0.65);
@@ -50,6 +53,96 @@ header {
 
 .head_logo:hover{
   color: rgba(255, 255, 255, 0.65);
+}
+
+/* header navigation menu */
+
+.head_menu ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.head_menu a{
+  display: block;
+  padding: 15px;
+  color: #fff;
+  color: var(--text-bright-color);
+  background-color: rgba(0, 0, 0, 0.05);
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.head_menu a:hover{
+  background-color: rgba(0, 0, 0, 0.1);
+  color: rgba(255, 255, 255, 0.65);
+  color: var(--text-less-bright-color)
+}
+
+@media (min-width: 768px) {
+  .head_menu a:hover{
+    background-color: transparent;
+  }
+}
+
+@media (min-width: 768px) {
+  header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    max-width: var(--large-width);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .head_menu ul{
+    display: flex;
+  }
+}
+
+/* header menu toggle */
+
+@media (max-width: 768px) {
+  /* for a small display */
+  header .container-small {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .head_button {
+    margin-right: 10px;
+    padding: 0;
+    border: none;
+    outline: none;
+    color: #fff;
+    color: var(--icon-color);
+    background: none;
+    font-size: 28px;
+    opacity: 0.65;
+    cursor: pointer;
+  }
+
+  .head_button :hover {
+    opacity: 0.3;
+  }
+
+  .head_menu {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  /* for a large display */
+  .head_button {
+    display: none;
+  }
+
+  .head_menu {
+    display: block !important;
+  }
 }
 
 /* main full banner image */
@@ -161,7 +254,7 @@ header {
 @media (min-width: 768px) {
   .content .container {
     display: flex;
-    max-width: 1000px;
+    max-width: 1200px;
     max-width: var(--large-width);
     margin-left: auto;
     margin-right: auto;
