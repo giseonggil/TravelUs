@@ -4,13 +4,17 @@
 :root{
   --main-color: #87B7FF;
   --accent-color: #65A3FF;
-  --accent-color: #FF6955; /*living coral*/
+  --double-accent-color: #FF6955; /*living coral*/
+  --icon-color: #fff;
+  --icon-bk-color: #ddd;
+  --large-width: 1000px;
 }
 
 /* basic setting */
 body{
   font-family: Montserrat;
   margin: 0;
+  background-color: rgb(242, 242, 242);
 }
 
 /* main full banner image */
@@ -20,7 +24,7 @@ body{
   justify-content: center;
   height: 100vh;
   min-height: 100vh;
-  background-image: url(img/banner_main.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url(img/banner_main.jpg);
   background-position: center;
   background-size: cover;
   text-align: center;
@@ -48,7 +52,8 @@ body{
 #welcoming{
   margin-top: 50px;
 }
-
+/* TODO: welcoming phrase가 반응형이 되도록...화면상에서의 위치로 지정할 수? */
+/* TODO: 아니면 welcome to 가 TravelUs 위에 조그마한 글씨로? */
 
 @media (min-width:768px) {
   .full_banner h1{
@@ -59,3 +64,75 @@ body{
     font-size : 60px;
   }
 }
+
+/* content */
+
+.content {
+  font-family: Nanum brush script;
+  font-size: 24px;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+.content .text {
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 60px;
+}
+
+.content h2{
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-size: 40px;
+}
+
+.content p{
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-size: 25px;
+  line-height: 1.8;
+  opacity: 0.8;
+}
+
+.content a{
+  color: #87B7FF;
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+.content a:hover{
+  color: #65A3FF;
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 300;
+}
+
+.content .icon {
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 40px;
+  width: 2em;
+  line-height: 2em;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #ddd;
+  background-color: var(--icon-bk-color);
+  color: #fff;
+  color: var(--icon-color)
+}
+
+@media (min-width: 768px) {
+  .content .container {
+    display: flex;
+    max-width: 1000px;
+    max-width: var(--large-width);
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+  .content .text {
+    flex: 1;
+  }
