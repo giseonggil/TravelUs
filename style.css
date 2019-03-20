@@ -316,6 +316,25 @@ footer .container {
   }
 }
 
+@media (min-width:768px) {
+  footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .footA {
+    flex: 0 0 40%;
+  }
+
+  .footB {
+    flex: 0 0 60%;
+  }
+
+  .copyright {
+    flex: 0 0 100%
+  }
+}
 
 /* TODO: 미디어쿼리를 이용해서 큰 창에서는 follow me 옆에 아이콘이 가도록? footer들 가로 정렬? {
 
