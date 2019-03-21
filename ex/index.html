@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> TravelUs </title>
+    <meta name="viewport" content="width=device=width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Comfortaa|Gloria+Hallelujah|Josefin+Sans|Montserrat:400,500,600|Nanum+Brush+Script|Poppins|Questrial" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/706963b3f0.js"></script>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script>
+      $(function () {
+        $('.head_button').click(function () {
+          $('.head_menu').slideToggle();
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <!--header-->
+    <header>
+      <div class="container">
+        <div class="container-small">
+          <a href="index.html" class="head_logo">
+            TravelUs
+            <span>Around The World</span>
+          </a>
+          <button type="button" class="head_button">
+            <span class="fa fa-bars" title="Menu"></span>
+          </button>
+        </div>
+        <nav class="head_menu">
+          <ul>
+            <li><a href="#plans.html">Plans</a></li>
+            <li><a href="records.html">Records</a></li>
+            <li><a href="#content3">#content3</a></li>
+            <li><a href="#content4">#content4</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="full_banner">
+      <div class="container">
+        <h1>TravelUs</h1>
+        <p>Around The World</p>
+        <p class="container" id="welcoming">Welcome to TravelUs<br></p>
+      </div>
+    </section>
+
+    <!--contents-->
+    <section class="content">
+      <div class="container">
+        <!--content1-->
+        <div class="text">
+          <span class="fa fa-calendar-alt icon"></span>
+          <h2>Travel Plan</h2>
+          <p>A goal without a plan is only a dream - Brian Tracy.</p>
+          <a href="#">travel plans
+            <span class="fa fa-angle-right"></span>
+          </a>
+        </div>
+        <!--content2-->
+        <div class="text">
+          <span class="fa fa-pencil icon"></span>
+          <h2>Travel Records</h2>
+          <p> He said... </p>
+          <a href="#">travel records
+            <span class="fa fa-angle-right"></span>
+          </a>
+        </div>
+        <!--content3-->
+        <div class="text">
+          <span class="fa fa-camera-retro icon"></span>
+          <h2>Photos</h2>
+          <p> #quote </p>
+          <a href="#">photos
+            <span class="fa fa-angle-right"></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!--footer-->
+    <footer>
+      <div class="container">
+
+        <div class="footA">
+          <h2>TravelUs</h2>
+          <p>
+            Developer : Giseong Gil <br>
+            Aff. : Department of Electronic Engineering, KyungHee University. <br>
+            E-mail: rlftjd960@khu.ac.kr <br><br>
+            <a href="http://hyperlink.com">
+              http://hyperlink.com
+            </a>
+          </p>
+        </div>
+
+        <div class="footB">
+          <!-- SNS references -->
+          <div class="reference">
+            <p class="follow">Follow me</p>
+
+            <ul class="icon">
+              <li><a href="https://www.instagram.com/giseonggil/?hl=en" class="fab fa-instagram" title="instagram">
+                <span class="Instagram"></span>
+              </a></li>
+              <li><a href="https://web.facebook.com/profile.php?id=100002714842903" class="fab fa-facebook-square" title="facebook">
+                <span class="Facebook"></span>
+              </a></li>
+              <li><a href="https://www.youtube.com/channel/UCo0b1Zo7ouGtckjoChswy4A?view_as=subscriber" class="fab fa-youtube" title="Youtube">
+                <span class="Youtube"></span>
+              </a></li>
+              <!-- <li><a href="line id" class="fab fa-line"><span class="line"></span>Line</a></li> -->
+              <!-- TODO: line 계정 생성하고 어떻게 링크 아이콘 추가할지? -->
+            </ul>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <p> © TravelUs. All rights reserved. Design: Giseong Gil</p>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
