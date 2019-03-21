@@ -203,6 +203,15 @@ header {
   }
 }
 
+/* records page full_banner compact */
+
+.full_banner.compact {
+  height: 450px;
+  min-height: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url(img/banner_compact.jpg);
+}
+
+
 /* footer */
 
 footer {
