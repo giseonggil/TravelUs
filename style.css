@@ -441,7 +441,7 @@ footer .container {
   list-style: none;
   display: flex;
   max-width: 1200px;
-  margin: 20px auto;
+  margin: 20px auto 10px auto;
   border-left: solid 0.75rem var(--logo-bk-color);
   border-left: solid 0.75rem #163D3F;
 }
